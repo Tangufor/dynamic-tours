@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Booking and Contact</title>
+</head>
+<body>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="Dynamic Tours DC" content="Seeking to tour our great capital city? Let Dynamic Tour Services
+  let us give you the greatest experience as you tour Washington, DC">
+  <meta name="keywords" content="Dynamic tours, tour-Washington-DC, Dynamic tours Washington, contact dynamic tours,
+  washington DC tourism, Limo services, limousine washington dc">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+</script>
+  </head>
+  <body>
+    <div id="main">
+
+      <div id="wrapper">
+        <img src="capitol.jpg" style="float:left; height:250px; width:250px; border-radius:0 125px 125px 0;" alt="US Capitol">
+        <span id="title">Dynamic Tours DC</span>
+        <div style="float:right; width:300px; margin:20px 20px 0 0; ">
+          <script>
+  (function() {
+    var cx = '018204627380396084685:aid-d-3x5-i';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown"><a href="#" class="dropbtn">OUR SERVICES</a>
+              <div class="dropdown-cont">
+                <a href="daytimetours.html">TOURS</a>
+                <a href="limo.html">LIMO</a>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#" class="dropbtn">EXPLORE DC</a>
+              <div class="dropdown-cont">
+                <a href="monuments.html">MONUMENTS</a>
+                <a href="museums.html">MUSEUMS</a>
+              </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="form.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="w3-content  w3-section" style="width:1300px;height:1200px; padding-top:250">
+        <div style="height:250px; width:1300px"></div>
+        <div style="height:70px; width:1000px; margin-left:50px;"><h1 style="font-weight:lighter; font-family:sans-serif;color:#2b4d00">
+          Your Booking Details</h1></div>
+          <script>
+          function validation(){
+            var x,
+            x = document.forms["form"]["zip code"].value;
+            if (isNaN(x) || x < 10000 || x > 99999){
+              alert('Please enter a valid zip code');
+              return false;
+            }
+            else {
+              alert('Thank you. You will now be redirected to our secure payment site');
+            }
+
+          }
+          </script>
+      <div class="form1">
+        <form name="form" onsubmit="return validation()" method="post" style="font-family:sans-serif">
+          <fieldset>
+            <legend>Personal information</legend>
+          <div class="required"><label>Name</label></div>
+          <input type="text" name ="firstname" required="required" placeholder="First name">
+          <input type="text" name ="lastname" required="required" placeholder="Last name">
+        </fieldset>
+        <fieldset>
+          <legend>Contact information</legend>
+          <div class="required"><label>Address</label></div>
+
+          <input type="text" name ="address" required="required" placeholder="Street" style="width:400px"><br><br>
+          <input type="number" id="zip" name ="zip code" required="required" placeholder="Zip">
+          <input type="text" name ="city" required="required" placeholder="City"style="width:150px">
+          <input type="text" name ="state" required="required" placeholder="State"><br>
+          <div class="required"><label>Phone</label></div>
+          <input type="tel" name ="home phone" placeholder="Phone"  required="required"><br>
+          Email address <br>
+          <input type="email" name ="email"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Other information</legend>
+        <div class="required"><label>Date</label></div>
+          <input type="date" id="datepicker" name="date" placeholder="Date" required="required">
+          Adults
+          <select name="adults">
+            <option value="1 adult">1 adult</option>
+            <option value="2 adult">2 adults</option>
+            <option value="3 adult">3 adults</option>
+            <option value="4 adult">4 adults</option>
+            <option value="5 adult">5 adults</option>
+            <option value="6 adult">6 adults</option>
+            <option value="7 adult">7 adults</option>
+            <option value="8 adult">8 adults</option>
+            <option value="9 adult">9 adults</option>
+            <option value="10 adult">10 adults</option>
+          </select>
+          Children
+          <select name="children">
+            <option value="1 child">1 child</option>
+            <option value="2 children">2 children</option>
+            <option value="3 children">3 children</option>
+            <option value="4 children">4 children</option>
+            <option value="5 children">5 children</option>
+            <option value="6 children">6 children</option>
+            <option value="7 children">7 children</option>
+            <option value="8 children">8 children</option>
+            <option value="9 children">9 children</option>
+            <option value="10 children">10 children</option>
+          </select><br><br>
+
+          <div class="required"><label>Tour Selection</label></div>
+          <input type="radio" name ="tour" value="Day Time">Day Time Tour - $35 per person<br>
+          <input type="radio" name ="tour" value="Night tour" >Sunset Tour - $65 per person<br>
+          <input type="radio" name ="tour" value="bundle" >Bundle - Day tour & Limo - $85 per person<br><br>
+          Special Requirements<br>
+          <textarea name="questions" placeholder="Type your preferences here"></textarea><br>
+        </fieldset>
+          <input type="submit" value="PROCEED TO PAYMENT">
+
+        </form>
+
+      </div>
+      <div class="form2">
+        <h2>Connect with us 24/7</h2>
+        <p>Tel. +1 240 486 4528
+        <br>Email us at <a href="mailto:dynamicboy.nath@yahoo.com"><em>dynamicboy.nath@yahoo.com</em></a></p>
+        <p><b>And why not visit us?</b><br><br>
+          0000 Pensylvania Ave NW<br>
+          Washington, DC 20000</p>
+      </div>
+    </div>
+      <div class="buttom">
+        <div class="name">
+          <h1 style="font-weight:lighter">Dynamic<br> Tours DC</h1>
+          <p style="color:#fff">0000 Pensylvania Ave NW<br>Washington, DC 20000<br>
+          Phone: +1 202 000 1111<br>
+          Email:<a style="color:#fff" href="mailto:dynamicboy.nath@yahoo.com"><em>dynamicboy.nath@yahoo.com</em></a>
+        </div>
+        <Nav class="nav2">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="daytimetours.html">TOURS</a></LI>
+            <li><a href="limo.html">LIMO</a></li>
+            <li><a href="museums.html">MUSEUMS</a></li>
+            <li><a href="monuments.html">MONUMENTS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="form.html">CONTACT US</a></li>
+          </ul>
+        </Nav>
+      </div>
+
+         <footer>
+           <p>Copyright © 2016 Dynamic Tours DC</p>
+           <p style="font-size:small;width:1000px; margin-left:140px">This website is published and maintained by Dynamic Tours DC, Inc.
+            Unless permitted by the copyright law applicable to you, all text and other
+            information on this website are the intellectual property of Dynamic Tours DC, Inc.</p>
+         </footer>
+
+
+   </div>
+
+</body>
+</html>
